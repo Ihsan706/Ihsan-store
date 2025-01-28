@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://192.168.1.109/1/3d%20room/ok.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<style>
+.form{
+    left: 3vw;
+    position: relative;
+    top: 1vw;
+}
+.coolpic {
+    transform-style: preserve-3d;
+    perspective: 60px;
+    width: 30vw;
+    overflow: hidden;
+    object-fit: cover;
+    height: 20vw;
+    animation-name: coolpic;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    position: relative;
+}
+/*
+@keyframes coolpic{
+0%{
+    transform: rotate(30deg);
+    left: 100vw;
+}
+30%{
+    transform: rotate(-30deg);
+    left: 0vw;
+}
+40%{
+    transform: rotate(0deg);
+    left: 0vw;
+}
+70%{
+    transform: rotate(0deg);
+    left: 0vw;
+}
+100%{
+    transform: rotate(30deg);
+    left: 110vw;
+}
+}
+*/
+
+@keyframes coolpic {
+  0%  {left:100vw; width:10em; /*top:0cm; */z-index:0; background-color:blue; transform: /*translateZ(4000px)*/ rotateY(0deg);}
+ 40% {left:calc(50% - 25em); /* width:30vw;  top:0cm; */z-index:1; background-color:darkblue;	transform: /*translateZ(4000px)*/ rotateY(700deg);}
+50% {left:50%; /* width:25vw; top:0cm; */ z-index:2; background-color:blue;	transform: /*translateZ(4000px)*/ rotateY(720deg);}
+ 84%  { left:0%; /* width:10em; top:0cm; */ z-index:0; background-color:black;	transform: /*translateZ(4000px)*/ rotateY(0deg);}
+  100%  { left:0%; /* width:10em; top:0cm; */ z-index:0; background-color:black;	transform: /*translateZ(4000px)*/ rotateY(0deg);}
+}
+.buy {
+    padding: 1px;
+    background: #00000000;
+    border: 1px;
+    width: 10vw;
+    height: 4vw;
+}
+.checkout {
+    width: 8vw;
+}
+.see {
+    width: 6vw;
+    border-radius: 50%;
+    position: relative;
+    height: 6vw;
+    background: aliceblue;
+    display: inline-block;
+    left: 80vw;
+}
+.prf {
+    width: 5vw;
+}
+form {
+
+    max-width: 100vw;
+    width: max-content;
+    display: inline-block;
+}
+#onew {
+	position: absolute;
+    top: 9px;
+    height: fit-content;
+	animation-delay: 6s;
+    animation-duration: 10s;
+
+}
+#twow {
+	animation-delay: 5s;
+    animation-duration: 14s;
+    height: fit-content;
+	    top: 9px;
+	position: absolute;
+}
+#threew {
+	animation-delay: 0s;
+    animation-duration: 12s;
+position: absolute;
+    top: 9px;
+    height: fit-content;
+}
+#fourw {
+	animation-delay: 3s;
+    animation-duration: 9s;
+position: absolute;
+    top: 9px;
+    height: fit-content;
+}
+#fivew {
+	animation-delay: 8s;
+    animation-duration: 18s;
+position: absolute;
+    top: 9px;
+    height: fit-content;
+}
+.prod {
+    overflow: hidden;
+    object-fit: cover;
+    display: inline-block;
+    position: relative;
+    height: 25vw;
+    width: 40vw;
+    background: cadetblue;
+    margin-bottom: 2vh;
+    margin-right: 2vw;
+    margin-left: 5vw;
+}
+.in {
+    background: #0000;
+    width: fit-content;
+    padding: 0px;
+    border: 0px;
+}
+.pic {
+    height: 20vw;
+    width: 40vw;
+}
+.pr {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 40%;
+}
+.protext {
+    font-size: 2vw;
+    text-align: center;
+}
+html , body{
+    background: black;
+   width: 100vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.start {
+    width: -webkit-fill-available;
+    position: relative;
+    height: fit-content;
+    background: cadetblue;
+}
+.prf {
+    position: relative;
+    width: 5vw;
+    left: 0.5vw;
+}
+.cool{
+	height: 23vw;
+    position: relative;
+/*	    position: fixed; */
+}
+</style>
+<title>store</title>
+</head>
+
+
+
+<body><div class="cool">
+<button type="submit" name="buy" value="عصير 
+7.jpeg
+3
+" class="coolpic" id="onew"> <img src="./store_files/7.jpeg" class="coolpic" id="one" alt="ERROR">ا3اشتري بمقابل</button>
+<button type="submit" name="buy" value="3هود دوج مع 2عصير[او قهوه]مجانا 
+18.jpeg
+15
+" class="coolpic" id="twow"> <img src="./store_files/18.jpeg" class="coolpic" id="two" alt="ERROR">15اشتري بمقابل</button><button type="submit" name="buy" value="3هود دوج مع 2عصير[او قهوه]مجانا
+18.jpeg
+15
+" class="coolpic" id="threew"> <img src="./store_files/18.jpeg" class="coolpic" id="three" alt="ERROR">15اشتري بمقابل</button><button type="submit" name="buy" value="ok" class="coolpic" id="fourw"> <img src="./store_files/7.jpeg" class="coolpic" id="one" alt="ERROR">ا3اشتري بمقابل</button>
+<button type="submit" name="buy" value="ok2" class="coolpic" id="fivew"> <img src="./store_files/7.jpeg" class="coolpic" id="one" alt="ERROR">ا3اشتري بمقابل</button>
+
+
+</div>
+<div>
+<div style="margin-top: 5vw;">
+
+
+<div class="prod">
+<button name="buy" value="بطاطس صغير
+1.jpeg
+3
+" class="in">
+<img src="./store_files/1.jpeg" class="pic" alt="ERROR">
+<h1 class="protext"> اشتري بطاطس صغير بمقابل ﷼3</h1>
+</button>
+</div>
+
+
+
+<div class="prod">
+<button name="buy" value="بطاطس كبير
+2.jpeg
+5
+" class="in">
+<img src="./store_files/2.jpeg" class="pic" alt="ERROR">
+<h1 class="protext"> اشتري بطاطس كبير بمقابل ﷼5</h1>
+</button>
+</div>
+
+
+
+<div class="prod">
+<button name="buy" value="ستربس ٣ حبه
+3.jpeg
+4
+" class="in">
+<img src="./store_files/3.jpeg" class="pic" alt="ERROR">
+<h1 class="protext"> اشتري ستربس ٣ حبه بمقابل ﷼4</h1>
+</button>
+</div>
+
+
+
+<div class="prod">
+<button name="buy" value="ستربس مع بطاطس و شاي مجانا
+4.jpeg
+6
+" class="in">
+<img src="./store_files/4.jpeg" class="pic" alt="ERROR">
+<h1 class="protext"> اشتري ستربس مع بطاطس و شاي&nbsp;مجانا بمقابل ﷼6</h1>
+</button>
+</div>
+
+
+
+<div class="prod">
+<button name="buy" value="هوت دوج
+5.jpeg
+5
+" class="in">
+<img src="./store_files/5.jpeg" class="pic" alt="ERROR">
+<h1 class="protext"> اشتري هوت دوج بمقابل ﷼5</h1>
+</button>
+</div>
+
+
+
+<div class="prod">
+<button name="buy" value="2هود دوج مع عصير[او قهوه]مجانا
+6.jpeg
+10
+" class="in">
+<img src="./store_files/6.jpeg" class="pic" alt="ERROR">
+<h1 class="protext"> اشتري 2هود دوج مع عصير[او قهوه]مجانا بمقابل ﷼10</h1>
+</button>
+</div>
+
+
+
+<div class="prod">
+<button name="buy" value="3هود دوج مع 2عصير[او قهوه]مجانا
+18.jpeg
+15
+" class="in">
+<img src="./store_files/18.jpeg" class="pic" alt="ERROR">
+<h1 class="protext"> اشتري 3هود دوج مع 2عصير[او قهوه]مجانا بمقابل ﷼15</h1>
+</button>
+</div>
+
+
+
+<div class="prod">
+<button name="buy" value="عصير
+7.jpeg
+3
+" class="in">
+<img src="./store_files/7.jpeg" class="pic" alt="ERROR">
+<h1 class="protext"> اشتري عصير بمقابل ﷼3</h1>
+</button>
+</div>
+
+
+
+<div class="prod">
+<button name="buy" value="قهوه
+8.jpg
+1
+" class="in">
+<img src="./store_files/8.jpg" class="pic" alt="ERROR">
+<h1 class="protext"> اشتري قهوه بمقابل ﷼1</h1>
+</button>
+</div>
+
+
+
+<div class="prod">
+<button name="buy" value="بيتزا
+8.jpeg
+10
+" class="in">
+<img src="./store_files/8.jpeg" class="pic" alt="ERROR">
+<h1 class="protext"> اشتري بيتزا بمقابل ﷼10</h1>
+</button>
+</div>
+
+
+
+<div class="prod">
+<button name="buy" value="6اورق عنب
+9.jpg
+6
+" class="in">
+<img src="./store_files/9.jpg" class="pic" alt="ERROR">
+<h1 class="protext"> اشتري 6اورق عنب بمقابل ﷼6</h1>
+</button>
+</div>
+
+
+
+<div class="prod">
+<button name="buy" value="موهيتو
+9.jpeg
+5
+" class="in">
+<img src="./store_files/9.jpeg" class="pic" alt="ERROR">
+<h1 class="protext"> اشتري موهيتو بمقابل ﷼5</h1>
+</button>
+</div>
+
+
+
+<div class="prod">
+<button name="buy" value="كوب
+10.jpeg
+2
+" class="in">
+<img src="./store_files/10.jpeg" class="pic" alt="ERROR">
+<h1 class="protext"> اشتري كوب بمقابل ﷼2</h1>
+</button>
+</div>
+
+
+
+<div class="prod">
+<button name="buy" value="كرك
+11.jpeg
+2
+" class="in">
+<img src="./store_files/11.jpeg" class="pic" alt="ERROR">
+<h1 class="protext"> اشتري كرك بمقابل ﷼2</h1>
+</button>
+</div>
+
+
+
+<div class="prod">
+<button name="buy" value="دوريتوز
+12.jpeg
+99999
+" class="in">
+<img src="./store_files/12.jpeg" class="pic" alt="ERROR">
+<h1 class="protext"> اشتري دوريتوز بمقابل ﷼99999</h1>
+</button>
+</div>
+
+
+
+<div class="prod">
+<button name="buy" value="معمول
+13.jpeg
+1
+" class="in">
+<img src="./store_files/13.jpeg" class="pic" alt="ERROR">
+<h1 class="protext"> اشتري معمول بمقابل ﷼1</h1>
+</button>
+</div>
+
+
+
+<div class="prod">
+<button name="buy" value="حلويات
+14.jpeg
+1
+" class="in">
+<img src="./store_files/14.jpeg" class="pic" alt="ERROR">
+<h1 class="protext"> اشتري حلويات بمقابل ﷼1</h1>
+</button>
+</div>
+
+
+
+<div class="prod">
+<button name="buy" value="بطايق فيفا اسأل المحاسب
+15.jpeg
+999
+" class="in">
+<img src="./store_files/15.jpeg" class="pic" alt="ERROR">
+<h1 class="protext"> اشتري بطايق فيفا اسأل المحاسب بمقابل ﷼999</h1>
+</button>
+</div>
+
+
+
+<div class="prod">
+<button name="buy" value="بطاطس
+16.jpeg
+4
+" class="in">
+<img src="./store_files/16.jpeg" class="pic" alt="ERROR">
+<h1 class="protext"> اشتري بطاطس بمقابل ﷼4</h1>
+</button>
+</div>
+
+
+
+<div class="prod">
+<button name="buy" value="عصير
+17.jpeg
+2
+" class="in">
+<img src="./store_files/17.jpeg" class="pic" alt="ERROR">
+<h1 class="protext"> اشتري عصير بمقابل ﷼2</h1>
+</button>
+</div>
+
+</div>
+
+<h1 style="color:white;">من برمجت
+<br>احسان سميح الشريف</h1>
+
+
+</div></body></html>
